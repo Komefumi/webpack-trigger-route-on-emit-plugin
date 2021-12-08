@@ -2,7 +2,7 @@
   "name": "webpack-trigger-route-on-emit-plugin",
   "version": "0.0.5",
   "description": "A webpack plugin that ensures designated routes of some base url is pinged each time a compilation emit happens",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,13 @@
   "author": "Komefumi <komefumi@protonmail.ch>",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0",
+    "axios": "^0.24.0",
     "puppeteer": "^12.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "@types/node": "^16.11.12",
+    "@types/webpack": "^5.28.0",
+    "prettier": "^2.5.1",
+    "webpack": "^5.65.0"
   }
 }
