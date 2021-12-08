@@ -1,6 +1,6 @@
 {
   "name": "webpack-trigger-route-on-emit-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A webpack plugin that ensures designated routes of some base url is pinged each time a compilation emit happens",
   "main": "lib/index.js",
   "scripts": {
@@ -24,5 +24,17 @@
     "@types/webpack": "^5.28.0",
     "prettier": "^2.5.1",
     "webpack": "^5.65.0"
-  }
+  },
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komefumi/webpack-trigger-route-on-emit-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Komefumi/webpack-trigger-route-on-emit-plugin/issues"
+  },
+  "homepage": "https://github.com/Komefumi/webpack-trigger-route-on-emit-plugin#readme"
 }
