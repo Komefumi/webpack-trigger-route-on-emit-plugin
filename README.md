@@ -5,7 +5,7 @@ Make sure to check the config/webpack.config.js file in the project
 Also the plugin's typescript files within it's src directory should be straightforward to reason
 
 ```bash
-npm install webpack-trigger-route-on-emit plugin --save-dev
+npm install webpack-trigger-route-on-emit-plugin --save-dev
 ```
 
 This plugin allows you to have designated routes be pinged each time assets are emitted

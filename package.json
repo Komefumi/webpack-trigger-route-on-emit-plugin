@@ -1,6 +1,6 @@
 {
   "name": "webpack-trigger-route-on-emit-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A webpack plugin that ensures designated routes of some base url is pinged each time a compilation emit happens",
   "main": "lib/index.js",
   "scripts": {
