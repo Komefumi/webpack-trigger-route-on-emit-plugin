@@ -1,5 +1,13 @@
 # Webpack Trigger Route on Emit Plugin
 
+Note: You can check the titan-branches branch of scully-blastique (mentioned in this README) to get a better idea of how this plugin is used
+Make sure to check the config/webpack.config.js file in the project
+Also the plugin's typescript files within it's src directory should be straightforward to reason
+
+```bash
+npm install webpack-trigger-route-on-emit plugin --save-dev
+```
+
 This plugin allows you to have designated routes be pinged each time assets are emitted
 
 Pass a configuration object to each instance of the plugin (one instance for each baseURL)
@@ -17,6 +25,26 @@ interface IOptions {
   initialCheckTrigger?: CheckTriggerType;
   beforeCheckTrigger?: CheckTriggerType;
 }
+```
+
+## Bonus
+
+```typescript
+// You can pull out a helper to check the base URL exists
+// While still importing the plugin
+const {
+  ensureURLExistsAsync,
+  default: TriggerRouteOnEmitPlugin,
+} = require("webpack-trigger-route-on-emit-plugin");
+
+// Ensure a link exists
+ensureURLExistsAsync("http://localhost:8080");
+
+// Want to make sure checks to all links resolve to true?
+Promise.all([
+  ensureURLExistsAsync("http//localhost:8080"),
+  ensureURLExistsAsync("http//localhost:2121"),
+]);
 ```
 
 If you pass an initalCheckTrigger function (has to return either a boolean value or a Promise that resolves to a boolean value), then the pinging will only happen after the first time the initialCheckTrigger returns true
