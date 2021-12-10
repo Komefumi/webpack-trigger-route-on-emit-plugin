@@ -1,6 +1,6 @@
 # Webpack Trigger Route on Emit Plugin
 
-Note: You can check the titan-branches branch of scully-blastique (mentioned in this README) to get a better idea of how this plugin is used
+Note: You can check the [titan-branches](https://github.com/Komefumi/titan-branches) project to get a better idea of how this plugin is used
 Make sure to check the config/webpack.config.js file in the project
 Also the plugin's typescript files within it's src directory should be straightforward to reason
 
@@ -57,7 +57,7 @@ If you also specifiy a beforeCheckTrigger, then before the pinging happens, each
 
 ### The Story
 
-So I have webpack workflow [(the titans-branches branch)](https://github.com/Komefumi/scully-blastique/tree/titan-branches) of [scully-blastique](https://github.com/Komefumi/scully-blastique)
+Refer the workflow of [titan-branches](https://github.com/Komefumi/titan-branches)
 
 Here I import a handlebars template into the index.tsx entry file, and ping a koa-js server that receives the request with a designated file name and contents
 
@@ -75,4 +75,3 @@ You have a plugin that's reasonably straightforward to reason out the internals 
 
 Just make sure you keep your pulls systematic so we can try to track things properly :)
 
-Thanks for coming to my TED talk
